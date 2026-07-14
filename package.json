@@ -12,6 +12,8 @@
     "dev-cloudflare": "wrangler dev",
     "deploy-cloudflare": "wrangler publish",
     "dev-next": "next",
+    "build": "next build",
+    "start": "next start",
     "vercel-build": "next build"
   },
   "dependencies": {
