@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: openai-proxy
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: OPENAI_API_KEY
+        scope: run
+      - key: NODE_ENV
+        value: production
