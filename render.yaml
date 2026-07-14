@@ -3,8 +3,8 @@ services:
     name: openai-proxy
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    buildCommand: pnpm install && pnpm run build
+    startCommand: pnpm run start
     envVars:
       - key: OPENAI_API_KEY
         scope: run
